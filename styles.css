@@ -1,0 +1,244 @@
+/* Estilos gerais */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: hsl(0, 0%, 100%);
+}
+ 
+/* Estilo do cabeçalho */
+header {
+    background-color: #ffbd59;
+    color: #020101;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+   
+}
+ 
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+ 
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+ 
+header nav ul li {
+    margin: 0 15px;
+}
+ 
+header nav ul li a {
+    color: #ed6a6a;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    text-transform: uppercase;
+    transition: color 0.3s ease-in-out;
+}
+ 
+header nav ul li a:hover {
+    color: #c21717;
+}
+ 
+/* Estilo do banner */
+.banner {
+    background-image: url('img/BANNER.png');
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fffdf8;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+ 
+/* Estilo do conteúdo principal */
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+ 
+h2, h3 {
+    color: #333;
+    text-align: center;
+}
+ 
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-family: 'Georgia', serif;
+}
+ 
+h3 {
+    font-size: 1.5rem;
+    margin-top: 30px;
+    border-bottom: 2px solid #ffbd59;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+ 
+/* Estilo das listas do cardápio */
+.menu-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+ 
+ul {
+    list-style-type: none;
+    padding: 0;
+    width: 48%;
+}
+ 
+ul li {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+ 
+ul li img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin-right: 15px;
+    object-fit: cover;
+}
+ 
+ul li strong {
+    color: #ff5722;
+}
+ 
+ul li p {
+    margin: 0;
+    line-height: 1.5;
+}
+ 
+/* Estilo das imagens gerais */
+img {
+    border-radius: 8px;
+    object-fit: cover;
+    
+}
+ 
+/* Estilo do formulário de contato */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+ 
+form label {
+    margin: 10px 0 5px;
+}
+ 
+form input, form textarea, form button {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ffbd59;
+    border-radius: 5px;
+}
+ 
+form button {
+    background-color: #ffbd59;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+ 
+form button:hover {
+    background-color: #c32416;
+}
+ 
+/* Estilo dos links de contato */
+main a {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 10px 15px;
+    background-color: #ffbd59;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+ 
+main a:hover {
+    background-color: #c32416;
+}
+ 
+/* Estilo do iframe do Google Maps */
+iframe {
+    width: 100%;
+    height: 450px;
+    border: 0;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+ 
+/* Estilo do rodapé */
+footer {
+    text-align: center;
+    padding: 5px;
+    background-color: #f3f2f2;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9rem;
+}
+ 
+/* Responsividade */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+ 
+    nav ul li {
+        margin: 10px 0;
+    }
+ 
+    .banner {
+        height: 200px;
+    }
+ 
+    .menu-section {
+        flex-direction: column;
+    }
+ 
+    ul {
+        width: 100%;
+    }
+ 
+    ul li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+ 
+    ul li img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+ 
+    form {
+        width: 90%;
+    }
+}
+ 
