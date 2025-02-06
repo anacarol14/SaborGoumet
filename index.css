@@ -1,0 +1,123 @@
+/* Estilos gerais */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: hsl(31, 97%, 51%);
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #ffbd59;
+    color: #020101;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+header h2 {
+    font-size: 1.5rem;
+    margin: 5px 0;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color:  #0d0404b1;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    text-transform: uppercase;
+    transition: color 0.3s ease-in-out;
+}
+
+header nav ul li a:hover {
+    color: #c21717;
+}
+
+/* Estilo do banner */
+.banner {
+    background-image: url('img/BANNER.png');
+    height: 52vh;
+    /* width: 100vw; */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fffcf8;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Estilo do conteúdo principal */
+main {
+    padding: 20px;
+    /* max-width: 800px; */
+    margin: 0 auto;
+}
+
+h2, h3 {
+    color: #333;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-family: 'Georgia', serif;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-top: 30px;
+    border-bottom: 2px solid #ffbd59;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Estilo do rodapé */
+footer {
+    text-align: center;
+    padding: 5px;
+    background-color: #f3f2f2;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9rem;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .banner {
+        height: 200px;
+    }
+
+    main {
+        padding: 10px;
+    }
+}
