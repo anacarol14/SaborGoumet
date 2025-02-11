@@ -1,4 +1,4 @@
-/* Estilos gerais */
+/* gerais */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -7,7 +7,7 @@ body {
     background-color: hsl(31, 97%, 51%);
 }
 
-/* Estilo do cabeçalho */
+/* cabeçalho */
 header {
     background-color: #ffbd59;
     color: #020 101;
@@ -46,7 +46,7 @@ header nav ul li a:hover {
     color: #c21717;
 }
 
-/* Estilo do conteúdo principal */
+/*conteúdo principal */
 main {
     padding: 20px;
     max-width: 800px;
@@ -57,9 +57,10 @@ h2 {
     font-size: 2rem;
     margin-bottom: 20px;
     font-family: 'Georgia', serif;
+    color: #f3f2f2;
 }
 
-/* Estilo do formulário de reserva */
+/* formulário de reserva */
 form {
     display: flex;
     flex-direction: column;
@@ -94,7 +95,7 @@ form button:hover {
     background-color: #c32416;
 }
 
-/* Estilo do rodapé */
+/* rodapé */
 footer {
     text-align: center;
     padding: 5px;
@@ -175,7 +176,7 @@ header nav ul li a:hover {
     color: #c21717;
 }
 
-/* Estilo do conteúdo principal */
+/* conteúdo principal */
 main {
     padding: 20px;
     max-width: 800px;
@@ -203,7 +204,7 @@ main a:hover {
     background-color: #c32416;
 }
 
-/* Estilo do iframe do Google Maps */
+/*Google Maps */
 iframe {
     width: 100%;
     height: 450px;
@@ -212,7 +213,7 @@ iframe {
     margin-top: 20px;
 }
 
-/* Estilo do rodapé */
+/* rodapé */
 footer {
     text-align: center;
     padding: 5px;
